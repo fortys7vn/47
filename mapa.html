@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Mapa - Forty Sevn</title>
   <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style-player.css">
   <style>
     .zoom-wrapper {
       overflow: auto;
@@ -28,6 +29,21 @@
   </style>
 </head>
 <body>
+  <div class="topbar-player">
+    <div class="controls">
+      <button onclick="playAudio()">▶ Play</button>
+      <button onclick="stopAudio()">■ Stop</button>
+      <button onclick="changeVolume(-0.1)">🔉</button>
+      <button onclick="changeVolume(0.1)">🔊</button>
+    </div>
+  </div>
+
+  <audio id="radioPlayer" autoplay>
+    <source src="mp3/fortysevn.mp3" type="audio/mpeg" />
+    Seu navegador não suporta o elemento de áudio.
+  </audio>
+
+  <script src="script.js"></script>
   <header>
     <img src="imagens/banner.png" alt="Logo Forty Sevn" width="100%" height="100%" style="border: 2px solid black; margin: 0px;" />
   </header>
