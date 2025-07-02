@@ -1,0 +1,283 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Equipe</title>
+    <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style-player.css">
+  <link rel="stylesheet" type="text/css" href="equipe.css">
+    <style>
+    .zoom-wrapper {
+      overflow: auto;
+      width: 80%;
+	  height: 80%;
+    <!--  height: 100vh; -->
+      border: 3px solid #fff;
+      border-radius: 20px;
+      background-color: #000;
+    }
+    .zoom-container {
+      display: inline-block;
+      transform-origin: 0 0;
+      transition: transform 0.3s ease;
+    }
+    .zoom-container img {
+      display: block;
+      width: 100%;
+      max-width: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar-player">
+    <div class="controls">
+      <button onclick="playAudio()">▶ Play</button>
+      <button onclick="stopAudio()">■ Stop</button>
+      <button onclick="changeVolume(-0.1)">🔉</button>
+      <button onclick="changeVolume(0.1)">🔊</button>
+    </div>
+  </div>
+
+  <audio id="radioPlayer" autoplay>
+    <source src="mp3/fortysevn.mp3" type="audio/mpeg" />
+    Seu navegador não suporta o elemento de áudio.
+  </audio>
+
+  <script src="script.js"></script>
+  <header>
+    <img src="imagens/banner.png" alt="Logo Forty Sevn" width="100%" height="100%" style="border: 2px solid black; margin: 0px;" />
+  </header>
+
+  <nav>
+    <a href="index.html">INÍCIO</a>
+	<a href="equipe.html">EQUIPE</a>
+	<a href="mapa.html">MAPA</a>
+	<a href="mapa.html">REGRAS</a>
+	<a href="mapa.html">HIERARQUIA</a>
+    <a href="mapa.html">DONATE</a>
+    <a href="mapa.html">CONTATO</a>
+      </nav>
+<body>
+
+  <h1>Forty Sevn | Equipe</h1>
+
+  <div class="categoria-titulo">FUNDADORES</div>
+  <div class="team-container">
+    <div class="member-card">
+      <img src="equipe/839.jpg" class="member-img" />
+      <div class="member-name">Luan</div>
+      <div class="member-id">ID: 839</div>
+      <div class="member-role">Fundador</div>
+    </div>
+	
+    <div class="member-card">
+      <img src="equipe/473.jpg" class="member-img" />
+      <div class="member-name">Robson</div>
+      <div class="member-id">ID: 473</div>
+      <div class="member-role">Fundador</div>
+    </div>
+	    <div class="member-card">
+      <img src="equipe/2047.jpg" class="member-img" />
+      <div class="member-name">DJames</div>
+      <div class="member-id">ID: 2047</div>
+      <div class="member-role">Fundador</div>
+    </div>
+	    <div class="member-card">
+      <img src="equipe/503758.jpg" class="member-img" />
+      <div class="member-name">Rael</div>
+      <div class="member-id">ID: 503758</div>
+      <div class="member-role">Co-Fundador</div>
+    </div>
+  </div>
+
+  <div class="categoria-titulo">LIDERANÇA</div>
+  <div class="team-container">
+    <div class="member-card">
+      <img src="equipe/000.jpg" class="member-img" />
+      <div class="member-name">Fael</div>
+      <div class="member-id">ID: 4700</div>
+      <div class="member-role">Bigode</div>
+    </div>
+	    <div class="member-card">
+      <img src="equipe/000.jpg" class="member-img" />
+      <div class="member-name">Escobar</div>
+      <div class="member-id">ID: 854</div>
+      <div class="member-role">Patrão</div>
+    </div>
+		    <div class="member-card">
+      <img src="equipe/000.jpg" class="member-img" />
+      <div class="member-name">*</div>
+      <div class="member-id">ID: ***</div>
+      <div class="member-role">General</div>
+    </div>
+		    <div class="member-card">
+      <img src="equipe/000.jpg" class="member-img" />
+      <div class="member-name">*</div>
+      <div class="member-id">ID: ***</div>
+      <div class="member-role">Braço Direito</div>
+    </div>
+		    <div class="member-card">
+      <img src="equipe/000.jpg" class="member-img" />
+      <div class="member-name">*</div>
+      <div class="member-id">ID: ***</div>
+      <div class="member-role">Frente do Morro</div>
+    </div>
+			    <div class="member-card">
+      <img src="equipe/000.jpg" class="member-img" />
+      <div class="member-name">*</div>
+      <div class="member-id">ID: ***</div>
+      <div class="member-role">Psyco</div>
+    </div>
+
+  </div>
+
+  <div class="categoria-titulo">ADMINISTRAÇÃO</div>
+  <div class="team-container">
+    			    <div class="member-card">
+      <img src="equipe/000.jpg" class="member-img" />
+      <div class="member-name">*</div>
+      <div class="member-id">ID: ***</div>
+      <div class="member-role">Gerente Geral</div>
+    </div>
+			    <div class="member-card">
+      <img src="equipe/000.jpg" class="member-img" />
+      <div class="member-name">*</div>
+      <div class="member-id">ID: ***</div>
+      <div class="member-role">Gerente</div>
+    </div>
+  
+    <div class="member-card">
+      <img src="equipe/2021.jpg" class="member-img" />
+      <div class="member-name">PK</div>
+      <div class="member-id">ID: 2021</div>
+      <div class="member-role">Gerente</div>
+    </div>
+				    <div class="member-card">
+      <img src="equipe/000.jpg" class="member-img" />
+      <div class="member-name">*</div>
+      <div class="member-id">ID: ***</div>
+      <div class="member-role">Supervisor</div>
+    </div>
+	</div>
+	
+ <div class="categoria-titulo">GERÊNCIA</div>
+  <div class="team-container">
+		    <div class="member-card">
+      <img src="equipe/000.jpg" class="member-img" />
+      <div class="member-name">*</div>
+      <div class="member-id">ID: ***</div>
+      <div class="member-role">Supervisor Teste (Estagiário)</div>
+    </div>
+		   <div class="member-card">
+      <img src="equipe/000.jpg" class="member-img" />
+      <div class="member-name">*</div>
+      <div class="member-id">ID: ***</div>
+      <div class="member-role">Supervisor Teste (Estagiário)</div>
+    </div>
+	   <div class="member-card">
+      <img src="equipe/000.jpg" class="member-img" />
+      <div class="member-name">*</div>
+      <div class="member-id">ID: ***</div>
+      <div class="member-role">Olho da Firma</div>
+    </div>
+	
+	  </div>
+
+  <div class="categoria-titulo">PATROCINADORES</div>
+  <div class="team-container">
+    <div class="member-card">
+      <img src="equipe/1490.jpg" class="member-img" />
+      <div class="member-name">HAUZER</div>
+      <div class="member-id">ID: 1490</div>
+      <div class="member-role">Sócio do Morro </div>
+    </div>
+		    <div class="member-card">
+      <img src="equipe/000.jpg" class="member-img" />
+      <div class="member-name">*</div>
+      <div class="member-id">ID: ***</div>
+      <div class="member-role">Banca Forte</div>
+    </div>
+	    <div class="member-card">
+      <img src="equipe/000.jpg" class="member-img" />
+      <div class="member-name">*</div>
+      <div class="member-id">ID: ***</div>
+      <div class="member-role">Sócio Frio</div>
+    </div>
+		   <div class="member-card">
+      <img src="equipe/000.jpg" class="member-img" />
+      <div class="member-name">*</div>
+      <div class="member-id">ID: ***</div>
+      <div class="member-role">Investidor</div>
+    </div>
+  </div>
+  <div class="categoria-titulo">PENÉLOPE'S</div>
+  <div class="team-container">
+    			    <div class="member-card">
+      <img src="equipe/222.jpg" class="member-img" />
+      <div class="member-name">JuJu</div>
+      <div class="member-id">ID: 3101</div>
+      <div class="member-role">PENÉLOPE</div>
+    </div>
+    			    <div class="member-card">
+      <img src="equipe/222.jpg" class="member-img" />
+      <div class="member-name">M. Duda</div>
+      <div class="member-id">ID: 2405</div>
+      <div class="member-role">PENÉLOPE</div>
+    </div>
+    			    <div class="member-card">
+      <img src="equipe/222.jpg" class="member-img" />
+      <div class="member-name">Karol VidaLoka</div>
+      <div class="member-id">ID: 1902</div>
+      <div class="member-role">PENÉLOPE</div>
+    </div>
+  </div>
+  
+  <div class="categoria-titulo">MEMBRO ELITE</div>
+  <div class="team-container">
+    			    <div class="member-card">
+      <img src="equipe/000.jpg" class="member-img" />
+      <div class="member-name">*</div>
+      <div class="member-id">ID: ***</div>
+      <div class="member-role">ELITE</div>
+    </div>
+    			    <div class="member-card">
+      <img src="equipe/000.jpg" class="member-img" />
+      <div class="member-name">*</div>
+      <div class="member-id">ID: ***</div>
+      <div class="member-role">ELITE</div>
+    </div>
+  </div> 
+  <footer>
+    <div class="social-icons" style="text-align:center; margin-top: 20px;">
+      <a href="https://www.tiktok.com/" target="_blank">
+        <img src="imagens/tiktok.png" alt="TikTok" style="width:30px; margin: 0 10px;"/></a>
+      <a href="https://www.instagram.com/" target="_blank">
+        <img src="imagens/instagram.png" alt="Instagram" style="width:30px; margin: 0 10px;"/></a>
+      <a href="https://api.whatsapp.com/send?l=pt&phone=5521" target="_blank">
+        <img src="imagens/whatsapp.png" alt="WhatsApp" style="width:30px; margin: 0 10px;"/></a>
+      <a href="https://" target="_blank">
+        <img src="imagens/facebook.png" alt="Facebook" style="width:30px; margin: 0 10px;"/></a>
+      <a href="https://www.youtube.com/" target="_blank">
+        <img src="imagens/youtube-play.png" alt="YouTube" style="width:30px; margin: 0 10px;"/></a>
+    </div>
+    <p>&copy; 2025 FORTY SEVN. Todos os direitos reservados.</p>
+  </footer>
+  <script>
+    const container = document.getElementById('zoom-container');
+    let scale = 1;
+
+    document.getElementById('zoom-wrapper').addEventListener('wheel', function(e) {
+      e.preventDefault();
+      const scaleAmount = 0.1;
+      if (e.deltaY < 0) {
+        scale += scaleAmount;
+      } else {
+        scale = Math.max(1, scale - scaleAmount);
+      }
+      container.style.transform = `scale(${scale})`;
+    });
+  </script>  
+</body>
+</html>
