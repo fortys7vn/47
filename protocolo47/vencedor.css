@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+body {
+  margin: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  background: url('imagens/bg.png') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  font-size: 25px;
+  text-align: justify;
+}
+.overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: url('imagens/bg.png') no-repeat fixed;
+  background-size: cover;
+  opacity: 1;
+  z-index: 0;
+}
+.container {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 50px 20px;
+  animation: fadeIn 2s ease-out;
+}
+.logo {
+  width: 100px;
+  animation: spin 1s;
+}
+h1 {
+  color: #ff0033;
+  font-size: 3em;
+  margin: 20px 0;
+}
+h2 {
+  font-size: 0.7em;
+  color: #fff;
+}
+.winner-box {
+  font-size: 2.5em;
+  color: #00ffcc;
+  margin: 20px auto;
+  background: rgba(255,255,255,0.1);
+  border: 2px solid #00ffcc;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px #00ffcc;
+  width: fit-content;
+  animation: pulse 2s infinite;
+}
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 30px;
+  justify-content: center;
+}
+.description {
+  margin-top: 20px;
+  font-size: 2.2em;
+}
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 15px 25px;
+  font-size: 1.1em;
+  color: white;
+  background-color: #ff0033;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+.btn:hover {
+  background-color: #cc0029;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-200px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 0 20px #00ffcc; }
+  50% { box-shadow: 0 0 30px #00ffcc; }
+}
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+@media (max-width: 600px) {
+  h1 { font-size: 2em; }
+  h2 { font-size: 1.5em; }
+  .winner-box { font-size: 1.8em; padding: 15px; }
+}

@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sorteio</title>
+  <link rel="stylesheet" href="sorteio.css" />
+  </head>
+<body>
+  <div class="container">
+    <h1><img src="imagens/gif/campeao.gif" alt="target" width="100" style="vertical-align:middle;"> FORTY SEVN</h1>
+    
+    <textarea id="input-ids" placeholder="Digite os IDs separados por vírgula (ex: 473,839,2047)"></textarea>
+    <input type="number" id="quantidade" placeholder="Quantos sortear?" min="1" />
+  
+  <div class="buttons">
+    <button onclick="sortear()"><img src="imagens/gif/dado.gif" alt="target" width="80" style="vertical-align:middle;"> SORTEAR</button>
+	    
+      <a class="button-link mission" href="regras.html"><img src="imagens/gif/caveira.gif" alt="target" width="80" style="vertical-align:middle;"> REGRAS</a>
+	   </div> 
+	     <footer>
+    <p>&copy; 2025 FORTY SEVN. Todos os direitos reservados.</p>
+  </footer>
+	    <div id="roleta" class="roleta"></div>
+    <div id="resultado" class="resultado"></div>
+  </div>
+  <audio id="som-vitoria" src="assets/som.mp3" preload="auto"></audio>
+  <script src="sorteio.js"></script>
+</body>
+</html>
