@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jogador Eliminado</title>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="botao.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Josefin Sans', sans-serif;
+      background: url(imagens/eliminado.png) no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0px;
+      height: 100vh;
+    }
+
+    .container {
+      background-color: rgba(0, 0, 0, 0.50);
+      border-radius: 80px;
+      padding: 140px 220px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
+      animation: fadeIn 1s ease-in-out, pulseGlow 2s infinite, shake 1s infinite;
+    }
+
+    h1 {
+      font-size: 42px;
+      color: #ff0033;
+      margin-bottom: 40px;
+      text-shadow: 0 0 10px red;
+    }
+
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 80px;
+      height: 40px;
+    }
+
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #cc0000;
+      transition: .4s;
+      border-radius: 34px;
+    }
+
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 32px;
+      width: 32px;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      transition: .4s;
+      border-radius: 50%;
+    }
+
+    input:checked + .slider {
+      background-color: #00cc66;
+    }
+
+    input:checked + .slider:before {
+      transform: translateX(40px);
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    @keyframes pulseGlow {
+      0%, 100% { box-shadow: 0 0 20px red; }
+      50% { box-shadow: 0 0 50px #ff3333; }
+    }
+
+    @keyframes shake {
+      0%, 100% { transform: translateX(0); }
+      25% { transform: translateX(-5px); }
+      50% { transform: translateX(5px); }
+      75% { transform: translateX(-5px); }
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 28px;
+      }
+
+      .switch {
+        width: 60px;
+        height: 30px;
+      }
+
+      .slider:before {
+        height: 24px;
+        width: 24px;
+      }
+
+      input:checked + .slider:before {
+        transform: translateX(30px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1><img src="imagens/gif/caveira.gif" alt="target" width="79" style="vertical-align:middle;"> JOGADOR ELIMINADO</h1>
+    <img src="imagens/gif/mao-direita.gif" alt="target" width="80" style="vertical-align:middle;"><label class="switch"> 
+      <input type="checkbox" id="audioToggle">
+      <span class="slider"></span>
+    </label>
+    <audio id="audio" src="audio/eliminado.mp3">
+	</audio>
+		    <div class="buttons">
+      <a class="button-link mission" href="regras.html">Regras</a> 
+    </div>
+  </div>
+  <script>
+    const toggle = document.getElementById('audioToggle');
+    const audio = document.getElementById('audio');
+
+    toggle.addEventListener('change', function () {
+      if (this.checked) {
+        audio.play();
+      } else {
+        audio.pause();
+        audio.currentTime = 0;
+      }
+    });
+
+    audio.addEventListener('ended', function () {
+      toggle.checked = false;
+    });
+  </script>
+</body>
+</html>

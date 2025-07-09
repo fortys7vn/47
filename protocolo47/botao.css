@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 25px;
+
+}
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 35px;
+  justify-content: center;
+}
+
+button, a.button-link {
+  background-color: #ff0033;
+  color: white;
+  padding: 20px 60px;
+  border: none;
+  border-radius: 120px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button:hover, a.button-link:hover {
+  background-color: #cc0029;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+  button, a.button-link {
+    width: 100%;
+    text-align: center;
+  }
