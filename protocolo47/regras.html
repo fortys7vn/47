@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Regras</title>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="regras.css" />
+  <link rel="stylesheet" href="style-player.css">  
+  <style>
+        body {
+	  margin: 0;
+      background: url(imagens/bg.png) no-repeat fixed;
+      background-size: cover;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+        }
+    	<!-- background-color: #0f0f0f; -->
+	 color: #e4e4e4;           
+     padding: 100px;
+     max-width: 100%;
+     margin: auto;
+}  
+	</style>
+</head>
+<body>
+  <div class="container">
+  <h2><img src="imagens/logo-bvb.png" alt="target" width="100" style="vertical-align:middle;"></h2> 
+      <h1><img src="imagens/gif/perigo.gif" alt="target" width="50" style="vertical-align:middle;">Conduta e Regras do Evento</h1>
+    <ul>
+      <li>Qualquer jogador que descumprir as regras será eliminado imediatamente.</li>
+      <li>Faltas de respeito com organização ou <staff><b><strong>STAFF</strong></b></staff> resultarão na exclusão do jogador.</li>
+      <li>Comportamentos tóxicos ou abusivos também resultarão na eliminação.</li>
+      <li>É expressamente proibido qualquer ato de desrespeito direcionado ao anfitrião do evento, <em1><img src="imagens/gif/hacker.gif" alt="target" width="70" style="vertical-align:middle;"> <b><strong>Forty Sevn (47)</strong></b></em1>, bem como a qualquer membro convidado. Atitudes ofensivas, provocativas ou que comprometam a integridade e o bom andamento do evento não serão toleradas sob nenhuma circunstância. Estarão presentes representantes dos grupos <em4><img src="imagens/gif/inspetor.gif" alt="target" width="50" style="vertical-align:middle;"> <b><strong>ROXO (RX)</strong></b></em4>, além das equipes médicas <em3><img src="imagens/gif/ambulancia.gif" alt="target" width="50" style="vertical-align:middle;"> <b><strong>UNIMED</strong></b></em3> e <em2><b><strong>MedSevn (MEDS)</strong></b></em2>. A <em3><strong>UNIMED</strong></em3> <img src="imagens/gif/ambulancia1.gif" alt="target" width="50" style="vertical-align:middle;"> será responsável pelo atendimento emergencial e primeiros socorros durante todo o evento. A organização reforça que o respeito mútuo e a conduta adequada são indispensáveis. Qualquer violação dessas diretrizes resultará em medidas imediatas para a eliminação do Jogador.</li>
+	  <li>O uso da arma <staff><b><strong>UZI</strong></b></staff> está proibido durante todo o evento. Jogadores que forem flagrados utilizando essa arma estarão sujeitos à <staff><strong>eliminação imediata</strong></staff>.</li>
+      <li>Jogadores que iniciarem combate antes do sinal oficial serão <staff><b><strong>Eliminados</strong></staff></b>.</li>
+      <li>Sigam as instruções dos <staff><b><strong>STAFFS</strong></b></staff> para evitar confusão.</li>
+      <li>Joguem com <b><strong>RESPEITO</strong></b>, <b><strong>SERIEDADE</strong></b> e acima de tudo com <b><strong>ESPÍRITO DE EQUIPE</strong></b>.</li>
+	</ul>
+
+    <div class="checkbox-group">
+      <h3><label>
+      <input type="checkbox" id="aceiteRegras"> Eu aceito seguir as regras do evento.
+      </label></h3>
+      <h3><label>
+        <input type="checkbox" id="aceiteTermos"> Eu aceito os termos estabelecidos pelos administradores.
+      </label></h3>
+    </div>
+    <div class="buttons">
+      <a class="button-link mission" href="eliminado.html">Sair</a>
+	  <a class="button-link mission" href="video.html">Trailer</a>
+      <a class="button-link mission" href="missao1.html">Missão I</a>
+      <a class="button-link mission" href="missao2.html">Missão II</a>
+      <a class="button-link mission" href="missao3.html">Missão III</a>
+	  <a class="button-link mission" href="sorteio.html">Sorteio</a>
+	  <a class="button-link mission" href="vencedor.html">Ganhadores</a>
+    </div>
+  </div>
+    <script src="regras.js"></script>
+	  <div class="topbar-player">
+    <div class="controls">
+      <button onclick="playAudio()">▶ Play</button>
+      <button onclick="stopAudio()">■ Stop</button>
+      <button onclick="changeVolume(-0.1)">🔉</button>
+      <button onclick="changeVolume(0.1)">🔊</button>
+    </div>
+  </div>
+  <audio id="radioPlayer" autoplay>
+    <source src="audio/bvb.mp3" type="audio/mpeg" />
+    Seu navegador não suporta o elemento de áudio.
+  </audio>
+  <script src="player.js"></script>
+</body>
+</html>

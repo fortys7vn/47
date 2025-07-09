@@ -1,0 +1,45 @@
+.data-relogio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px; /* espaço entre data e relógio */
+  flex-wrap: wrap; /* responsivo para telas menores */
+  margin-bottom: 30px;
+}
+/*
+.data {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  max-width: 500px;
+  text-align: left;
+} */
+
+
+#timer {
+  width: 19vh;
+  height: 10vh;
+  line-height: 1.0;
+  font-size: 4.5rem;
+  color: #ffffff;
+  background: #000;
+  padding: 0px 0px;
+  border-radius: 65px;
+  box-shadow: 0 0 10px rgba(102, 0, 204, 0.6);
+  animation: pulse 20s infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 30px rgba(102, 0, 204, 0.3); }
+  50% { box-shadow: 0 0 40px rgba(102, 0, 204, 0.9); }
+  100% { box-shadow: 0 0 45px rgba(102, 0, 204, 0.3); }
+}
+
+#timer.finalizado {
+  background: #cc0000;
+  animation: none;
+  color: #fff;
+  box-shadow: 0 0 30px rgba(255, 0, 0, 0.8);
+}

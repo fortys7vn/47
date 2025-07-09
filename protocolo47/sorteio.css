@@ -1,0 +1,90 @@
+
+body {
+  margin: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  background: url('assets/bg.png') no-repeat fixed;
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 0px;
+}
+.container {
+  background: rgba(0,0,0,0.7);
+  padding: 100px; /* SOMBRA DO QUADRADO */
+  border-radius: 60px;
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+  animation: fadeIn 1s ease-in;
+}
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+textarea, input {
+  width: 100%;
+  padding: 10px; /* TAMANHO DA BUSCA */
+  margin: 10px 0;
+  border-radius: 15px;
+  border: none;
+  font-size: 1.5em; /* TAMANHO DOS NÚMEROS */
+}
+button {
+  padding: 15px 30px;
+  font-size: 1.2em;
+  background-color: #ff0033;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+button:hover {
+  background-color: #cc0029;
+}
+
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 30px;
+  justify-content: center;
+}
+
+button, a.button-link {
+  background-color: #ff0033;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button:hover, a.button-link:hover {
+  background-color: #cc0029;
+}
+
+
+.resultado {
+  margin-top: 20px;
+  font-size: 1.8em;
+  color: #00ffcc;
+}
+.roleta {
+  margin-top: 30px;
+  font-size: 2.5em;
+  font-weight: bold;
+  height: 50px;
+  overflow: hidden;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1); }
+}
